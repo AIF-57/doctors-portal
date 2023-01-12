@@ -7,7 +7,7 @@ import ReachUsCard from './ReachUsCard';
 
 const ReachUs = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-5 px-5 mb-52 max-w-[1280px] mx-auto'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 mb-52 max-w-[1280px] mx-auto'>
             <ReachUsCard bgClass='bg-gradient-to-r from-secondary to-primary' scheduleTitle='Opening Hours' scheduleImg={clock}></ReachUsCard>
             <ReachUsCard bgClass='bg-accent' scheduleTitle='Visit our location' scheduleInfo='Brooklyn, NY 10036, United States' scheduleImg={marker}></ReachUsCard>
             <ReachUsCard bgClass='bg-gradient-to-r from-secondary to-primary' scheduleTitle='Contact us now' scheduleInfo='+000 123 456789' scheduleImg={phone}></ReachUsCard>

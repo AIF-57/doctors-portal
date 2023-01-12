@@ -30,14 +30,14 @@ const Testimonial = () => {
         <div className='px-5 py-20 max-w-[1280px] mx-auto'>
             <div className="testimonialTitleArea flex justify-between">
                 <div className="testimonialTitle text-left">
-                    <p className='text-primary text-xl'>Testimonial</p>
+                    <p className='text-secondary text-xl font-semibold'>Testimonial</p>
                     <p className='text-4xl'>What Our Patients Says</p>    
                 </div>
                 <div className="quoteImg">
                     <img src={quote} alt="quote" className='w-[192px] h-[156px]'/>
                 </div>
             </div>
-            <div className="testimonials grid grid-cols-3 gap-5 py-5">
+            <div className="testimonials grid grid-cols-1 lg:grid-cols-3 gap-5 py-5">
                 {
                     patientsData.map(patientData => <TestimonialCard patientData={patientData}></TestimonialCard>)
                 }
