@@ -5,7 +5,7 @@ import PrimaryBtn from '../Shared/PrimaryBtn/PrimaryBtn';
 const GetStarted = () => {
     return (
         <div>
-        <div className="hero min-h-screen bg-base-100">
+        <div className="hero h-[800px] bg-base-100">
             <div className="hero-content flex-col lg:flex-row gap-x-20">
             <img src={treatment} className="max-w-sm rounded-lg shadow-2xl" alt='treatment'/>
             <div className='w-1/3 text-left'>

@@ -6,7 +6,7 @@ import bg from '../../utilities/assets/images/bg.png'
 const HeroArea = () => {
     return (
         <div>
-        <div className="hero min-h-screen bg-base-100" style={{background:`url(${bg})`,position:'center',backgroundSize:'cover'}}>
+        <div className="hero h-[700px] bg-base-100" style={{background:`url(${bg})`,position:'center',backgroundSize:'cover'}}>
         <div className="hero-content flex-col lg:flex-row-reverse gap-x-6">
           <div className="imageArea w-1/2">
             <img src={heroImg} className="rounded-lg shadow-2xl" alt='HeroImage' />
