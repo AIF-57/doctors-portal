@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-const ServiceModal = ({serviceInfo,selectedDate}) => {
+const ServiceModal = ({serviceInfo,setServiceInfo,selectedDate}) => {
     const {name,slots} = serviceInfo;
 
     let appointmentDetails;
@@ -14,6 +14,8 @@ const ServiceModal = ({serviceInfo,selectedDate}) => {
         const number = event.target.number.value;
         appointmentDetails = {date,timeSlot,name,email,number};
         console.log(appointmentDetails);
+
+        setServiceInfo(null)
     }
     return (
         <div>

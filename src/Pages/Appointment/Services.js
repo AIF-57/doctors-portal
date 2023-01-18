@@ -31,6 +31,7 @@ const Services = ({selectedDate}) => {
                 {serviceInfo && 
                     <ServiceModal 
                     serviceInfo={serviceInfo}
+                    setServiceInfo={setServiceInfo}
                     selectedDate={selectedDate}
                     ></ServiceModal>}
             </div>
