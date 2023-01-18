@@ -8,10 +8,11 @@ const Services = ({selectedDate}) => {
     const [services,setServices] = useState([]);
     const [serviceInfo,setServiceInfo] = useState({});
     useEffect(()=>{
-        fetch('services.json')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setServices(data));    
     },[])
+    console.log(services)
 
     return (
         <div className='min-h-[70vh]'>
